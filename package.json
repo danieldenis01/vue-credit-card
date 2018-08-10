@@ -1,8 +1,8 @@
 {
-  "name": "vuetify-credit-card",
-  "version": "1.0.0",
-  "description": "Vue.js wrapper for credit card https://github.com/jessepollak/card with vuetify example and pugjs and stylus.",
-  "author": "Ilio Adriano de Oliveira Junior <ilioadriano@live.com>",
+  "name": "vuejs-credit-card",
+  "version": "0.0.2",
+  "description": "Vue.js wrapper for credit card https://github.com/jessepollak/card. This project is just a pt-br translation of https://github.com/iliojunior/vuetify-credit-card.",
+  "author": "Gabriel de Souza Clímaco <gabrielsclimaco@gmail.com>",
   "keywords": [
     "card",
     "credit",
@@ -13,7 +13,7 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/iliojunior/vuetify-credit-card"
+    "url": "https://github.com/gabrielsclimaco/vuejs-credit-card"
   },
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
@@ -21,13 +21,17 @@
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "build:npm": "rimraf ./dist && webpack --config ./webpack.config.js"
   },
   "dependencies": {
+    "postcss-import": "^11.0.0",
+    "postcss-url": "^7.2.1",
     "payment": "^2.3.0",
     "vue": "^2.5.2"
   },
   "devDependencies": {
+    "@vue/cli-service": "^3.0.0-rc.12",
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
     "babel-eslint": "^8.2.1",
@@ -73,12 +77,10 @@
     "ora": "^1.2.0",
     "phantomjs-prebuilt": "^2.1.14",
     "portfinder": "^1.0.13",
-    "postcss-import": "^11.0.0",
     "postcss-loader": "^2.0.8",
-    "postcss-url": "^7.2.1",
     "pug": "^2.0.3",
     "pug-loader": "^2.4.0",
-    "rimraf": "^2.6.0",
+    "rimraf": "^2.6.2",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
     "sinon": "^4.0.0",
@@ -102,9 +104,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/iliojunior/vuetify-credit-card/issues"
+    "url": "https://github.com/gabrielsclimaco/vuejs-credit-card/issues"
   },
-  "homepage": "https://github.com/iliojunior/vuetify-credit-card#readme",
+  "homepage": "https://github.com/gabrielsclimaco/vuejs-credit-card#readme",
   "browserslist": [
     "> 1%",
     "last 2 versions",

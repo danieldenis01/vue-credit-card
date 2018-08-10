@@ -1,8 +1,8 @@
 export default {
   options: {
     formatting: false,
-    monthYear: 'month/year',
-    validDate: 'valid\nthru',
+    monthYear: 'mês/ano',
+    validDate: 'válido\naté',
     cardTypes: [
       'amex',
       'dankort',
@@ -27,7 +27,7 @@ export default {
       number: '•••• •••• •••• ••••',
       cvc: '•••',
       expiry: '••/••',
-      name: 'Full Name'
+      name: 'Nome'
     }
   },
   classDisplay: {
