@@ -1,5 +1,4 @@
-@import "~bourbon/app/assets/stylesheets/_bourbon";
-
+@import "~bourbon/app/assets/stylesheets/bourbon";
 @import "mixins";
 
 // browser specific hacks
@@ -9,14 +8,14 @@
 @import "cards/amex";
 @import "cards/discover";
 @import "cards/visa";
+@import "cards/visaelectron";
 @import "cards/mastercard";
 @import "cards/maestro";
 @import "cards/dankort";
 @import "cards/elo";
-
-.jp-card-invalid {
-    color: red !important; 
-}
+@import "cards/jcb";
+@import "cards/dinersclub";
+@import "cards/hipercard";
 
 .jp-card-container {
     @include perspective(1000px);
@@ -47,7 +46,6 @@
 
     &.jp-card-flipped {
         @include transform(rotateY(180deg));
-        @include backface-visibility(hidden);
     }
 
     .jp-card-front, .jp-card-back {
@@ -243,7 +241,7 @@
             left: $signature-left;
 
             &:after {
-                content: "This card has been issued by Jesse Pollak and is licensed for anyone to use anywhere for free.\AIt comes with no warranty.\A For support issues, please visit: github.com/jessepollak/card.";
+                content: "This card has been issued by Jesse Pollak and is licensed for anyone to use anywhere for free. It comes with no warranty. For support issues, please visit: github.com/jessepollak/card.";
                 position: absolute;
                 left: 120%;
                 top: 5%;

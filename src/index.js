@@ -1,7 +1,7 @@
 import Card from './components/Card.vue'
 
 const VueCard = {
-  version: '0.0.3',
+  version: '0.1.0',
   Card
 }
 
