@@ -26,7 +26,7 @@
   "author": "Thiago Malaquias <thiago.malaca@gmail.com>",
   "dependencies": {
     "bourbon": "^4.2.7",
-    "payment": "^2.3.0",
+    "payment": "https://github.com/danieldenis01/payment",
     "vue": "^2.1.0"
   },
   "devDependencies": {

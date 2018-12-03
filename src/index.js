@@ -5,4 +5,4 @@ const VueCard = {
   Card
 }
 
-module.exports = VueCard
+export default VueCard
